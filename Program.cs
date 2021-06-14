@@ -89,6 +89,11 @@ namespace Secao7
 
             DateTime d4 = d.AddDays(7);
             Console.WriteLine(d4);
+            
+            if (d.Date == DateTime.Now.Date)
+                Console.WriteLine("Datas iguais");
+            else
+                Console.WriteLine("Datas diferentes");
 
             TimeSpan t = new DateTime(2000, 10, 18).Subtract(new DateTime(2000, 10, 15));
             Console.WriteLine(t);
